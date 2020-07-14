@@ -1,4 +1,4 @@
-package com.zyigeek.d03_ref;
+package com.zyigeek.d02_ref;
 
 public class Car {
     private String label;

@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="p" class="com.zyigeek.d03_ref.Person">
+    <bean id="p" class="com.zyigeek.d02_ref.Person">
         <property name="username" value="zy"></property>
         <property name="age" value="20"></property>
 
@@ -14,7 +14,7 @@
         <property name="car.price" value="50"></property>
     </bean>
 
-    <bean id="c" class="com.zyigeek.d03_ref.Car">
+    <bean id="c" class="com.zyigeek.d02_ref.Car">
         <property name="label" value="aodi"></property>
         <property name="price" value="20"></property>
     </bean>

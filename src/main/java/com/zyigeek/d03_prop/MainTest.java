@@ -1,4 +1,4 @@
-package com.zyigeek.d02_prop;
+package com.zyigeek.d03_prop;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.context.ApplicationContext;

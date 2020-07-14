@@ -1,4 +1,4 @@
-package com.zyigeek.d03_ref;
+package com.zyigeek.d02_ref;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
