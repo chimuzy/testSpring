@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="p" class="com.zyigeek.d03_ref.Person">
+        <property name="username" value="zy"></property>
+        <property name="age" value="20"></property>
+
+        <property name="car" ref="c"></property>
+        <!--
+            修改当前Car对象的价格，要求必须在操作之前先完成对car的赋值
+            级联属性进行操作 car.price 等价于Person的对象 setCar() Car的对象 setPrica()
+         -->
+        <property name="car.price" value="50"></property>
+    </bean>
+
+    <bean id="c" class="com.zyigeek.d03_ref.Car">
+        <property name="label" value="aodi"></property>
+        <property name="price" value="20"></property>
+    </bean>
+</beans>
