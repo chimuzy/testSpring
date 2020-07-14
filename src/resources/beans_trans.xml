@@ -18,7 +18,7 @@
         <property name="user" value="${db.user}"></property>
         <property name="password" value="${db.password}"></property>
         <property name="jdbcUrl" value="${db.jdbcUrl}"></property>
-        <property name="driverClass" value="${db.driverclass}"></property>
+        <property name="driverClass" value="${db.driverclass}"/>
     </bean>
 
     <!-- 配置JdbcTemplate -->
