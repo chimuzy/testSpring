@@ -11,14 +11,14 @@
     <context:property-placeholder location="classpath:db.properties"/>
 
     <!-- 添加扫描包 -->
-    <context:component-scan base-package="com.zyigeek.d07_trans.service"></context:component-scan>
+    <context:component-scan base-package="com.zyigeek.d07_trans.service,com.zyigeek.d07_trans.dao"></context:component-scan>
 
     <!-- 配置C3P0的连接池 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="user" value="${db.user}"></property>
         <property name="password" value="${db.password}"></property>
         <property name="jdbcUrl" value="${db.jdbcUrl}"></property>
-        <property name="driverClass" value="${db.driverclass}"/>
+        <property name="driverClass" value="${db.driverClass}"/>
     </bean>
 
     <!-- 配置JdbcTemplate -->

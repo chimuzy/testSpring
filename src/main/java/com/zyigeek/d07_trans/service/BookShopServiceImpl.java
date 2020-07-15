@@ -20,12 +20,13 @@ public class BookShopServiceImpl implements IBookShopService {
 
     //通过账户名及书号购买书
     //支持注解式事务管理
-    @Transactional(propagation= Propagation.REQUIRES_NEW,
-            isolation= Isolation.READ_COMMITTED,
-            rollbackFor={IOException.class, SQLException.class},
-            noRollbackFor={ArithmeticException.class},
-            readOnly=false,
-            timeout=3)
+//    @Transactional(propagation= Propagation.REQUIRES_NEW,
+//            isolation= Isolation.READ_COMMITTED,
+//            rollbackFor={IOException.class, SQLException.class},
+//            noRollbackFor={ArithmeticException.class},
+//            readOnly=false,
+//            timeout=3)
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
     @Override
     public void purchase(String username, int bookId) throws BookStockException, AccountException {
         int price = bookShopDao.selectPrice(bookId);

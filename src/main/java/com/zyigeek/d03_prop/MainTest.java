@@ -14,7 +14,7 @@ public class MainTest {
         //1.创建IOC容器对象
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean_prop.xml");
 
-        ComboPooledDataSource dataSource = ac.getBean(ComboPooledDataSource.class);
+        ComboPooledDataSource dataSource = (ComboPooledDataSource) ac.getBean("datasource");
         System.out.println(dataSource);
         Connection connection=dataSource.getConnection();
         PreparedStatement preparedStatement=connection.prepareStatement("select password from user where username=?");

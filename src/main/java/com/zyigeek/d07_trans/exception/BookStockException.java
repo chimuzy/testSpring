@@ -1,6 +1,6 @@
 package com.zyigeek.d07_trans.exception;
 
-public class BookStockException extends  Exception {
+public class BookStockException extends  RuntimeException {
 
     public BookStockException() {
     }
